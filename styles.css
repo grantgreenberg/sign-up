@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid blue;
+    height: 100vh;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+}
+
+.left {
+    background-image: url(trees.jpg);
+    background-size: cover;
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: inherit;
+    position: relative;
+}
+
+.right {
+    flex: 1.2;
+    border: inherit;
+}
+
+.left-opacity {
+    border: 1px solid red;
+    position: absolute;
+    top: 20%;
+    height: 12.5rem;
+    width: 100%;
+}
+
+.credit {
+    border: 1px solid red;
+    text-align: center;
+    color: #FFF;
+}
