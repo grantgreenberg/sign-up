@@ -4,12 +4,17 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(233, 233, 233);
+}
+
 .container {
-    border: 1px solid blue;
     height: 100vh;
     width: 70vw;
     margin: auto;
     display: flex;
+    font-family: 'Quicksand', sans-serif;
+    color: greenyellow;
 }
 
 .left {
@@ -19,6 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     border: inherit;
     position: relative;
 }
@@ -31,17 +37,29 @@
 }
 
 .left-opacity {
-    border: 1px solid red;
     position: absolute;
     top: 20%;
     height: 12.5rem;
-    width: 100%;
+    width: 95%;
+    font-family: 'Borel', sans-serif;
+    font-size: 40px;
+    display: flex;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
 }
 
 .credit {
-    border: 1px solid red;
     text-align: center;
-    color: #FFF;
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.top-message,
+form {
+    background-color: rgb(0, 20, 15);
 }
 
 .top-message {
@@ -57,4 +75,27 @@
 form {
     border: 1px solid red;
     flex: 0.67;
+    padding: 30px;
+}
+
+fieldset {
+    padding: 30px;
+}
+
+.svg-icon {
+    fill: greenyellow;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+a:visited {
+    color:aquamarine;
 }
