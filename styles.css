@@ -15,7 +15,7 @@
 .left {
     background-image: url(trees.jpg);
     background-size: cover;
-    flex: 0.8;
+    flex: 0.33;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -24,8 +24,10 @@
 }
 
 .right {
-    flex: 1.2;
+    flex: 0.67;
     border: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
 .left-opacity {
@@ -40,4 +42,19 @@
     border: 1px solid red;
     text-align: center;
     color: #FFF;
+}
+
+.top-message {
+    border: 1px solid red;
+    flex: 0.33;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem 2rem;
+}
+
+form {
+    border: 1px solid red;
+    flex: 0.67;
 }
