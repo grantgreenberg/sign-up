@@ -1,3 +1,8 @@
+/* Generic formatting */
+:root {
+    --text-color-left: rgb(245, 245, 245);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(15, 15, 15);
 }
 
 .container {
@@ -14,36 +19,31 @@ body {
     margin: auto;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-    color: greenyellow;
+    color: var(--text-color-left);
 }
 
+/* Left container */
+
 .left {
-    background-image: url(trees.jpg);
+    background-image: url(./trees.jpg);
     background-size: cover;
-    flex: 0.33;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    border: inherit;
     position: relative;
-}
-
-.right {
-    flex: 0.67;
-    border: inherit;
-    display: flex;
-    flex-direction: column;
 }
 
 .left-opacity {
     position: absolute;
-    top: 20%;
-    height: 12.5rem;
+    top: 20vh;
+    height: max(150px, 14rem);
     width: 95%;
     font-family: 'Borel', sans-serif;
-    font-size: 40px;
+    font-size: 2rem;
     display: flex;
+    flex-direction: column;
     padding: 20px 40px;
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.4);
@@ -51,10 +51,44 @@ body {
     justify-content: center;
 }
 
+.left-opacity > div,
+.svg-icon {
+    font-size: clamp(1rem, 2vw, 4rem);
+    width: auto;
+    height: clamp(1rem, 2vw, 4rem);
+}
+
+.svg-icon {
+    fill: var(--text-color-left);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-left);
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+a:visited {
+    color:rgb(185, 185, 185);
+}
+
 .credit {
     text-align: center;
     background-color: rgb(0, 0, 0, 0.6);
     width: 100%;
+}
+
+/* Right container */
+
+.right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top-message,
@@ -82,20 +116,3 @@ fieldset {
     padding: 30px;
 }
 
-.svg-icon {
-    fill: greenyellow;
-}
-
-a {
-    text-decoration: none;
-    color: greenyellow;
-}
-
-a:hover {
-    text-decoration: underline;
-    font-weight: 800;
-}
-
-a:visited {
-    color:aquamarine;
-}
