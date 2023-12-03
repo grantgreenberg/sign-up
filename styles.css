@@ -1,6 +1,9 @@
 /* Generic formatting */
 :root {
     --text-color-left: rgb(245, 245, 245);
+    --text-color-right: rgb(60, 64, 67);
+    --background-color-right: rgb(225, 225, 225);
+    --background-color-form: rgb(235, 235, 235);
 }
 
 * {
@@ -39,13 +42,12 @@ body {
     position: absolute;
     top: 20vh;
     height: max(150px, 14rem);
-    width: 95%;
+    width: 100%;
     font-family: 'Borel', sans-serif;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
-    border-radius: 10px;
+    padding: 1.2rem 2.5rem;
     background-color: rgb(0, 0, 0, 0.4);
     align-items: center;
     justify-content: center;
@@ -89,15 +91,11 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.top-message,
-form {
-    background-color: rgb(0, 20, 15);
+    background-color: var(--background-color-right);
+    color: var(--text-color-right);
 }
 
 .top-message {
-    border: 1px solid red;
     flex: 0.33;
     font-size: 2rem;
     display: flex;
@@ -106,13 +104,36 @@ form {
     padding: 2.5rem 2rem;
 }
 
+.top-message > p {
+    margin-top: 1.2rem;
+}
+
+.top-message p:last-child {
+    color: black;
+    font-weight: 800;
+}
+
 form {
-    border: 1px solid red;
-    flex: 0.67;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    flex: 0.33;
     padding: 30px;
+    width: 100%;
+    background-color: var(--background-color-form);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
 }
 
 fieldset {
+    border: none;
     padding: 30px;
+}
+
+legend {
+    font-size: 2rem;
+}
+
+.form-element {
+    appearance: none;
 }
 
