@@ -59,9 +59,9 @@ body {
 
 .left-opacity > div,
 .svg-icon {
-    font-size: clamp(1rem, 2vw, 4rem);
+    font-size: clamp(1rem, 3vw, 4rem);
     width: auto;
-    height: clamp(1rem, 2vw, 4rem);
+    height: clamp(1rem, 3vw, 4rem);
 }
 
 .svg-icon {
@@ -139,7 +139,7 @@ legend {
 .form-row {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     gap: 2rem;
 }
 
